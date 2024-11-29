@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomWriteActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tx_book"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/book"
+            android:textColor="@color/gray"
+            android:textSize="17sp"
+            android:labelFor="@id/edit_book"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_book"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Please input book name"
+            android:textColorHint="@color/gray"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tx_author"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/author"
+            android:textColor="@color/gray"
+            android:textSize="17sp"
+            android:labelFor="@id/edit_author"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_author"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Please input author name"
+            android:textColorHint="@color/gray"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tx_press"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/press"
+            android:textColor="@color/gray"
+            android:textSize="17sp"
+            android:labelFor="@id/edit_press"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_press"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Please input press name"
+            android:textColorHint="@color/gray"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tx_BookName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/price"
+            android:textColor="@color/gray"
+            android:textSize="17sp"
+            android:labelFor="@id/edit_price"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_price"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="Please input price"
+            android:textColorHint="@color/gray"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_add"
+        android:text="@string/add"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_delete"
+        android:text="@string/delete"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_modifiy"
+        android:text="@string/modify"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_query"
+        android:text="@string/query"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+
+
+</LinearLayout>
