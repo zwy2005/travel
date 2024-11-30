@@ -79,12 +79,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // 添加1000条记录的按钮
-        val btnAddRecords = findViewById<Button>(R.id.btn_add_records)
-        btnAddRecords.setOnClickListener {
-            add1000Records() // 修改为每次添加1000条记录
-        }
-
         // 清空所有数据按钮
         val btnClearData = findViewById<Button>(R.id.btn_clear_data)
         btnClearData.setOnClickListener {
@@ -123,8 +117,8 @@ class MainActivity : AppCompatActivity() {
     private fun add1000Records() {
         lifecycleScope.launch(Dispatchers.IO) {
             val newRecords = List(500) {
-                val locationIndex = 1000 - it // 递减的地点编号，从 Location1000 到 Location1
-                val location = "Location$locationIndex" // Location1000, Location999, ...
+                val locationIndex = 501 + it // 递增的地点编号，从 Location500 到 Location999
+                val location = "Location$locationIndex" // Location500, Location501, ...
 
                 // 生成随机日期，年份在 2000 到 2024 之间
                 val randomYear = Random.nextInt(2000, 2025) // 生成 2000 到 2024 年的随机年份
@@ -161,7 +155,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
 
 
     private fun getRandomImageUri(): String {

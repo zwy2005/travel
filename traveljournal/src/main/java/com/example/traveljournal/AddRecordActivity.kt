@@ -139,6 +139,7 @@ class AddRecordActivity : AppCompatActivity() {
                 Toast.makeText(this, "请填写完整信息", Toast.LENGTH_SHORT).show()
             }
         }
+        findViewById<Button>(R.id.btn_back).setOnClickListener { finish() }
 
     }
 

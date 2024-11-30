@@ -28,8 +28,10 @@ interface TravelDao {
     ON TravelRecord.id = ContentItem.recordId 
     AND ContentItem.type = 1 
     GROUP BY TravelRecord.id
+    ORDER BY TravelRecord.id DESC
 """)
     suspend fun getAllRecordsWithFirstImage(): List<RecordWithFirstImage>
+
 
     // 获取单条记录的详细信息
     @Query("""

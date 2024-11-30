@@ -6,6 +6,12 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_back" />
+
     <EditText
         android:id="@+id/et_location"
         android:layout_width="match_parent"
